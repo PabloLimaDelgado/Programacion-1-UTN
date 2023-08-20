@@ -1,3 +1,5 @@
+import math
+
 #EJERCICIO 1
 '''Calcular el perímetro y área de un rectángulo dada su base y su altura.
 
@@ -224,3 +226,44 @@ precioCena =  float(input("Ingresar que monto le salio la cena: "))
 precioFinal = precioCena+(precioCena*(10/100))+(precioCena*0.062)
 
 print("En el monto final a pagar es de: ",precioFinal)'''
+
+#EJERCICIO 19
+'''19. Solicitar al usuario que ingrese el día, mes y año de su nacimiento y almacenar cada uno de ellos en una variable 
+numérica (en total, tres variables diferentes). Finalmente, mostrar la fecha en formato dd/mm/aaaa.
+
+dia = int(input("Ingrese el dia en que nacio: "))
+mes = int(input("Ingrese el mes en que nacio: "))
+anio = int(input("Ingrese el año en que nacio: "))
+
+print(f"La persona nacio en {dia:02d}/{mes:02d}/{anio}")'''
+
+# EJERCICIO 20
+'''20. Hacer otra versión del programa, pero esta vez almacenado todo en una única variable con formato DDMMAAA.
+
+dia = int(input("Ingrese el dia en que nacio: "))
+mes = int(input("Ingrese el mes en que nacio: "))
+anio = int(input("Ingrese el año en que nacio: "))
+
+unica_variable = f"{dia:02d}/{mes:02d}/{anio}"
+
+print(unica_variable)'''
+
+#EJERCICIO 21
+'''21. Una pareja de motociclistas necesita hacer ciertos cálculos antes de emprender un viaje en moto, 
+para saber cuántos tanques de combustible consumirá el viaje entero. Para eso deben 
+ingresar: cuántos kilómetros puede recorrer su moto con 1 litro de combustible, qué capacidad (en litros) tiene el 
+tanque y cuántos kilómetros en total recorrerán.
+Hacer un programa que solicite los datos necesarios y luego informe la cantidad de tanques de combustible necesarios
+
+consumo = float(input("Ingrese la cantidad de km que recorre con un litro de combustible: "))
+capacidad = float(input("Ingrese la cantidad de litros que posee el tanque de combustible: "))
+kilometros = float(input("Ingrese la cantidad de kilometros que recorrera en el viaje: "))
+
+cuantos = kilometros/(capacidad*consumo)
+cuantos_tanques = round(cuantos,0)
+print(f"DEBERÁ CARGAR ALREDEDOR DE {cuantos_tanques} VECES EL TANQUE")
+
+un_tanque = capacidad*consumo
+total_tanques = math.ceil(kilometros/un_tanque)
+
+print(f"Debera cargar {total_tanques} veces el tanque")'''
