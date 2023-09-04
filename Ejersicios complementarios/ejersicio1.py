@@ -91,6 +91,4 @@ print(nombre_completo_min)
 '''16. Por último, con la variable con el nombre en mayúsculas, aplica un método parecido
 para que se transforme todo en minúsculas excepto la primera letra.'''
 
-nombre_min_last = nombre_completo_mayus[: -1].lower() + nombre_completo_mayus[-1]
-
-print(nombre_min_last)
+print(nombre_completo_min.title())

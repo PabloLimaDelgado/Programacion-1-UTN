@@ -240,13 +240,13 @@ print(f"La persona nacio en {dia:02d}/{mes:02d}/{anio}")'''
 # EJERCICIO 20
 '''20. Hacer otra versión del programa, pero esta vez almacenado todo en una única variable con formato DDMMAAA.
 
-dia = int(input("Ingrese el dia en que nacio: "))
-mes = int(input("Ingrese el mes en que nacio: "))
-anio = int(input("Ingrese el año en que nacio: "))
+unica_variable = input("Ingrese el dia, el mes y el año: de la forma DDMMAAAA: ")
 
-unica_variable = f"{dia:02d}/{mes:02d}/{anio}"
+dia = unica_variable[0:2]
+mes = unica_variable[2:4]
+año = unica_variable[4:]
 
-print(unica_variable)'''
+print(f"La fecha es: {dia}/{mes}/{año}")'''
 
 #EJERCICIO 21
 '''21. Una pareja de motociclistas necesita hacer ciertos cálculos antes de emprender un viaje en moto, 
