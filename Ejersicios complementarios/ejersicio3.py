@@ -48,7 +48,6 @@ while (num!=0):
     while num > 0:
         aux = num%10
         num = num // 10
-        print(aux)
         if (aux%2 == 0):
             contador_digitos_pares += 1
         else:
