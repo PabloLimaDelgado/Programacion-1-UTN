@@ -77,7 +77,7 @@ por 4 y no debe ser divisible por 100, excepto que también sea divisible por 40
 
 anio = int(input("Ingresa un año para saber si es biciesto o no: "))
 
-if anio%4 == 0 or (anio%100 == 0 and anio%400 == 0 and anio%4 ==0):
+if ((anio%100 != 0 and anio%4 == 0) or anio%400 == 0):
     print("El año es bisiesto")
 else: 
     print("El año no es biciesto")'''
