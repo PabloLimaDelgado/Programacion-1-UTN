@@ -88,12 +88,12 @@ num1 = int(input("Ingresa el primer número entero: "))
 num2 = int(input("Ingresa el segundo número entero: "))
 num3 = int(input("Ingresa el tercero número entero: "))
 
-if num1 > num2 and num1>num3:
-    print(f"El número mas grande es el: {num1}")
-elif num2>num3 and num2>num1:
-    print(f"El número mas grande es el: {num2}")
-elif num3>num2 and num3>num1:
-    print(f"El número mas grande es el: {num3}")'''
+if num1 < num2 and num1 < num3:
+    print(f"El número mas pequeño es el: {num1}")
+elif num2 < num3 and num2 < num1:
+    print(f"El número mas pequeño es el: {num2}")
+elif num3 < num2 and num3 < num1:
+    print(f"El número mas pequeño es el: {num3}")'''
 
 #8 EJERCICIO 8 
 '''8.Escribí un programa que solicite ingresar un nombre de usuario y una contraseña. 
@@ -223,6 +223,13 @@ números sean solución. Se recuerda que la fórmula de las soluciones es: x = -
 print("Coeficientes de primer grado, formula: a x + b = 0")
 a = int(input("Ingrese el valor de a: "))
 b = int(input("Ingrese el valor de b: "))
+
+while(a == 0):
+    a = int(input("La pendiente no puede ser 0, ingrese otro número: "))
+    
+    if(a != 0):
+        break
+
 x = (-b / a)
 print(f"El valor de es: {x}")'''
 
@@ -253,7 +260,7 @@ Según la opción que desean, realizar la operación:
 •	Si operación es 1 entonces debemos ver el resultado de a + b
 •	Si operación es 2 entonces debemos ver el resultado de a * b
 •	Si operación es 3 entonces debemos ver el resultado de a - b
-•	Si operación es 4 entonces debemos ver el resultado de a / b
+•	Si operación es 4 entonces debemos ver el resultado de a / b 
 
 a = int(input("Ingrese el primer valor: "))
 b = int(input("Ingrese el segundo valor: "))
@@ -268,6 +275,13 @@ elif operacion == 3:
     operacion = a - b
     print(f"El resultado de su operacion es: {operacion}")
 elif operacion == 4:
+
+    while(b == 0):
+        b = int(input("La pendiente no puede ser 0, ingrese otro número: "))
+        
+        if(b != 0):
+            break
+
     operacion = a / b
     print(f"El resultado de su operacion es: {operacion}")
 else :

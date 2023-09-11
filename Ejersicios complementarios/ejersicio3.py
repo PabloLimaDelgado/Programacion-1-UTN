@@ -39,8 +39,8 @@ for m in range(len(frase)):
 #EJERSICIO 2
 '''contador_digitos_impares = 0
 contador_digitos_pares= 0
-num = int(input("Ingrese un número positivo: "))
-
+num = int(input("Ingrese un número positivo o cero para salir: "))
+numAux = num
 while (num!=0):
     if(num == 0):
         break
@@ -53,12 +53,12 @@ while (num!=0):
         else:
             contador_digitos_impares += 1
     
-    num = int(input("Ingrese un número positivo: "))
-
-
-print(f"La cantiad de digitos pares es: {contador_digitos_pares}")
-print(f"La cantiad de digitos impares es: {contador_digitos_impares}")'''
-    
+    print(f"La cantiad de digitos pares del numero {numAux} es: {contador_digitos_pares}")
+    print(f"La cantiad de digitos impares del numero {numAux} es: {contador_digitos_impares}")
+    contador_digitos_pares = 0
+    contador_digitos_impares = 0
+    num = int(input("Ingrese un número positivo o cero para salir: "))
+    numAux = num'''
 
 
 

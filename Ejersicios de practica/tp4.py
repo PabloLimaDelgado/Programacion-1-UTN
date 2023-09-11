@@ -28,7 +28,7 @@ while(x <= 30):
 
 #EJERCICIO 1
 '''1.Escriba un programa que acepte una secuencia de líneas e imprima todas las líneas convertidas 
-en mayúsculas. Deje una línea en blanco para indicar que ha finalizado la entrada de líneas.
+en mayúsculas. Deje una línea en blanco para indicar que ha finalizado la entrada de líneas. 
 
 word = input("Ingrese una frase: ").upper()
 
@@ -37,7 +37,7 @@ phrase = []
 while(word != ""):
     phrase.append(word)
 
-    word = input("Ingrese otra frase: ").upper()
+    word = input("Ingrese otra frase o enter si desea salir: ").upper()
 
     if(word == ""):
         print("---------")
