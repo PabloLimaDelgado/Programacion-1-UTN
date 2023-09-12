@@ -293,7 +293,7 @@ otro mensaje diferente si es viernes, otro mensaje diferente si es sábado
 o domingo. Si el día ingresado no es ninguno de esos, imprimir otro mensaje.
 
 diaSemana = input("Ingresar un dia de la semana: ")
-diaSemana=diaSemana.lower()
+diaSemana = diaSemana.lower()
 
 if(diaSemana == "lunes"):
     print("El dia ingresado es lunes. ")
