@@ -9,7 +9,7 @@ print("------------------- \n"
 while(numMenu != 6):
     print("Menú de opciones: \n" 
       "1. Añadir pelicula \n"
-      "2. Eliminar pelicula por el nombre \n"
+      "2. Eliminar pelicula por el posición \n"
       "3. Buscar pelicula por nombre \n"
       "4. Mostrar todas las peliculas \n"
       "5. Buscar n peliculas \n"
@@ -60,7 +60,7 @@ while(numMenu != 6):
         start = int(input(f"¿Desde que posición desea buscar en la lista? (Del 1 al {len(movie_array)}): "))
         end = int(input(f"¿Hasta que posición desea buscar en la lista? (Del 1 al {len(movie_array)}): "))
         print("----------------")
-        if start > 14 or start<1 or end >14 or end<1 : 
+        if start > len(movie_array) or start < 1 or end > len(movie_array) or end < 1 : 
             print("Numeros de inicio o final no validos")
             print("----------------")
             continue
